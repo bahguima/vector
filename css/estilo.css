@@ -1,3 +1,5 @@
+/* Folha de Estilo Vector
+-------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +16,33 @@
     font-size: 100%;
   }
 
+  /*MENU-------------------------------------------------- */
+  
 
+.navbar{
+    background: #2289D0;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0 5px 145px;
+    font-size: 20px;
 
-/*carousel indicadores*/
+}
+
+.navbar-brand{
+    width: 160px;
+    height:75px;
+
+}
+
+/*carousel 
+-------------------------------------------------- */
+
+#carousel-desk{
+    margin-top: 60px;
+    
+}
+
   .carousel-indicators li {
     width: 10px !important;
     height: 10px !important;
@@ -43,18 +69,113 @@
     min-width: 100%;
     height: 32rem;
   }
+
+  .banner-mobile{
+      display: none;
+  }
+
+
+/*serviços
+-------------------------------------------------- */
+
+
+
+
+
+  /*nossos clientes
+-------------------------------------------------- */
+
+  #cliente-desk {
+    background-image: url("../img/nossos-clientes.jpg");
+  
+    background-position: center;
+    display: flex;
+    height: 60vh;
+
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+  }
+
+
+  /*    align-items: flex-end;
+  justify-content: flex-start;*/
+  
+  #cliente-desk div {
+    margin-top: 80px;
+    padding-left: 20px;  
+    color: #ffffff;
+    padding: 0 10%;
+    width: 100%;
+    
+  }
+  
+  
+  #cliente-desk div p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 15px;
+  
+  }
+
+  #cliente-mobile {
+      display: none;
+  }
+
+  #cliente-mobile div{
+      display: none;
+  }
   
 
 
 
+  @media (max-width: 768px) {
+   
+        #carousel-desk{
+          display: none;
+        }
 
+        .banner-mobile{
+            display: block;
+        }
 
+        #cliente-desk {
+            display: none;
+          }
+        
+        
+          #cliente-mobile {
+            background-image: url("../img/nossos-clientes.jpg");
+            background-position: center;
+            display: flex;
+            height: 80vh;
+            align-items: flex-end;
+            justify-content: flex-start;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: 100%;
+          }
+        
+          #cliente-mobile div {
+            display: flex;
+            color: #ffffff;
+            padding: 0 10%;
+            width: 100%;
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+          
+          }
+       
+          #cliente-mobile div p {
+           
+            font-size: 16px;
+            font-style: italic;
+            line-height: 15px;
+          }
+        
+
+  
+        
     }
-  }
 
 
 
@@ -95,7 +216,7 @@
   }
   
   
-  /* css responsivo
+  /* RESPONSIVE CSS
   -------------------------------------------------- */
   
   @media (min-width: 40em) {
@@ -116,4 +237,14 @@
       margin-top: 7rem;
     }
   }
+}
+
+
+
+
+ /* CSS RESPONSIVO
+  -------------------------------------------------- */
   
+
+
+ 
