@@ -1,0 +1,24 @@
+{
+  "name": "vector",
+  "version": "1.0.0",
+  "description": "LP Vector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahguima/vector.git"
+  },
+  "author": "Barbara Guieiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahguima/vector/issues"
+  },
+  "homepage": "https://github.com/bahguima/vector#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
